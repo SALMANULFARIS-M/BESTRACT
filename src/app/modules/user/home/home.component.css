@@ -1,0 +1,32 @@
+
+        .bg-primary { background-color: #39dbbe; }
+        .bg-secondary { background-color: #1a47e6; }
+        .bg-tertiary { background-color: #0b1c8f; }
+        .text-primary { color: #39dbbe; }
+        .text-secondary { color: #1a47e6; }
+        .text-tertiary { color: #0b1c8f; }
+        .border-primary { border-color: #39dbbe; }
+        .border-secondary { border-color: #1a47e6; }
+        .border-tertiary { border-color: #0b1c8f; }
+        .btn-primary {
+            background-color: #39dbbe;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #30c4b0;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #1a47e6;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #153bd0;
+            transform: translateY(-2px);
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
