@@ -1,32 +1,135 @@
+.bg-primary {
+  background-color: #39dbbe;
+}
+.bg-secondary {
+  background-color: #1a47e6;
+}
+.bg-tertiary {
+  background-color: #0b1c8f;
+}
+.text-primary {
+  color: #39dbbe;
+}
+.text-secondary {
+  color: #1a47e6;
+}
+.text-tertiary {
+  color: #0b1c8f;
+}
+.border-primary {
+  border-color: #39dbbe;
+}
+.border-secondary {
+  border-color: #1a47e6;
+}
+.border-tertiary {
+  border-color: #0b1c8f;
+}
+.btn-primary {
+  background-color: #39dbbe;
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #30c4b0;
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  background-color: #1a47e6;
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #153bd0;
+  transform: translateY(-2px);
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
 
-        .bg-primary { background-color: #39dbbe; }
-        .bg-secondary { background-color: #1a47e6; }
-        .bg-tertiary { background-color: #0b1c8f; }
-        .text-primary { color: #39dbbe; }
-        .text-secondary { color: #1a47e6; }
-        .text-tertiary { color: #0b1c8f; }
-        .border-primary { border-color: #39dbbe; }
-        .border-secondary { border-color: #1a47e6; }
-        .border-tertiary { border-color: #0b1c8f; }
-        .btn-primary {
-            background-color: #39dbbe;
-            color: white;
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #30c4b0;
-            transform: translateY(-2px);
-        }
-        .btn-secondary {
-            background-color: #1a47e6;
-            color: white;
-            transition: all 0.3s ease;
-        }
-        .btn-secondary:hover {
-            background-color: #153bd0;
-            transform: translateY(-2px);
-        }
-        .course-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
+.btn-drain {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-drain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #39dbbe;
+  z-index: 0;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleY(0); /* Start with no height */
+  transform-origin: top; /* Expand from top */
+}
+
+.btn-drain:hover::before {
+  transform: scaleY(1); /* Full height on hover */
+}
+
+.btn-drain span {
+  position: relative;
+  z-index: 10;
+}
+
+.btn-drain:hover {
+  color: black;
+}
+.btn-drain-reverse {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent; /* Start transparent */
+  border: 2px solid #39dbbe;
+  color: black;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-drain-reverse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #39dbbe; /* This is what gets removed on hover */
+  z-index: 0;
+  transform: scaleY(1); /* Start full */
+  transform-origin: bottom;
+  transition: transform 0.5s ease-in-out;
+}
+
+.btn-drain-reverse:hover::before {
+  transform: scaleY(0); /* Shrinks to reveal transparency */
+}
+
+.btn-drain-reverse span {
+  position: relative;
+  z-index: 10;
+}
+
+.btn-drain-reverse:hover {
+  color: #39dbbe;
+}
+
+/* slideshow.component.css */
+.slideshow-container {
+  perspective: 1000px;
+}
+
+.slide {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.hero-container.animating h2,
+.hero-container.animating h1 span,
+.hero-container.animating p,
+.hero-container.animating .btn-drain,
+.hero-container.animating .btn-drain-reverse {
+  opacity: 0;
+  transform: translateY(20px); /* or scale, etc */
+  will-change: opacity, transform;
+}
+.hero-container h1 span:nth-child(2),
+.hero-container h1 span:nth-child(4) {
+  transform: scale(0.5);
+}

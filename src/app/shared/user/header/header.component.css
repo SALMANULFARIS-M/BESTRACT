@@ -1,0 +1,30 @@
+/* If needed, add custom CSS for better control */
+.transform {
+  transform: translateX(0);
+}
+.translate-x-full {
+  transform: translateX(100%);
+}
+.transition-all {
+  transition-property: all;
+}
+
+.header-item {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-fill-mode: forwards; /* Keeps final state after animation */
+}
+
+
+/* @keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.zoom-bg {
+  animation: zoom 20s ease-in-out infinite;
+} */

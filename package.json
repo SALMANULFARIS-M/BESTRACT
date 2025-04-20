@@ -7,10 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:BESTRACT_FE": "node dist/bestract-fe/server/server.mjs"
+    "serve:ssr:BESTRACT_FE": "node dist/bestract-fe/server/server.mjs",
+    "build:ssr": "ng build && npm run serve:ssr:BESTRACT_FE"
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^19.2.7",
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",

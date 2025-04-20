@@ -1,0 +1,112 @@
+<header>
+  <nav class="bg-white shadow-md fixed w-full z-50" @headerReveal (@headerReveal.done)="onHeaderRevealDone()">
+    <div class="container mx-auto px-4 md:px-6 py-3">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div
+          class="flex items-center gap-2 hover:scale-105 transition-transform duration-300 header-item"
+          [style.opacity]="animationDone ? '1' : '0'"
+          [style.transform]="animationDone ? 'translateY(0)' : 'translateY(-20px)'">
+          <img
+            src="https://bestract.com/user/Images/Low/44444.png"
+            alt="Bestract Logo"
+            class="h-10 w-10 rounded-full"
+          />
+          <div class="text-2xl font-bold text-tertiary poppins-semibold">
+            <span class="text-primary">Be</span
+            ><span class="text-secondary">stract</span>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex flex-1 justify-center header-item playfair"  [style.opacity]="animationDone ? '1' : '0'"
+        [style.transform]="animationDone ? 'translateY(0)' : 'translateY(-20px)'">
+          <ng-container *ngFor="let link of navLinks">
+            <a
+              [routerLink]="link.path"
+              routerLinkActive="text-tertiary "
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="mx-3 relative group text-gray-700 hover:text-primary transition duration-300"
+            >
+              {{ link.label }}
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+          </ng-container>
+        </div>
+
+        <!-- Quick Register Button -->
+        <div class="hidden md:flex header-item"  [style.opacity]="animationDone ? '1' : '0'"
+        [style.transform]="animationDone ? 'translateY(0)' : 'translateY(-20px)'">
+
+        <button
+        (click)="openRegisterModal()"
+        class="btn-reg relative overflow-hidden ml-4 px-4 py-2 text-sm montserrat-black border-2 border-secondary rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-all duration-300 group"
+      >
+        <!-- Fill Animation -->
+        <span
+          class="absolute inset-0 bg-tertiary opacity-10 group-hover:opacity-100 transition-all duration-500 ease-in-out scale-x-0 origin-left group-hover:scale-x-100 z-0"
+        ></span>
+
+        <!-- Text -->
+        <span class="relative z-10 transition-colors duration-300 group-hover:!text-white text-tertiary">
+          Quick Register
+        </span>
+      </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden header-item"  [style.opacity]="animationDone ? '1' : '0'"
+        [style.transform]="animationDone ? 'translateY(0)' : 'translateY(-20px)'">
+          <button
+            (click)="toggleMobileMenu()"
+            class="text-gray-700 focus:outline-none transition-transform duration-300 hover:rotate-90"
+          >
+            <i class="bx bx-menu text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Slide from Left -->
+      <div
+      *ngIf="isMobileMenuOpen"
+      @slideInOutPanel
+      @menuSlide
+      class="md:hidden fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg z-50 overflow-hidden"
+    >
+      <div class="p-4 flex flex-col h-full">
+        <!-- Close Button -->
+        <button
+          (click)="toggleMobileMenu()"
+          class="self-end text-gray-700 focus:outline-none mb-4"
+        >
+          <i class="bx bx-x text-2xl"></i>
+        </button>
+
+        <!-- Navigation Links with Staggered Animation -->
+        <nav class="flex flex-col text-right">
+          <ng-container *ngFor="let link of navLinks">
+            <a
+              [routerLink]="link.path"
+              routerLinkActive="text-tertiary playfair"
+              (click)="isMobileMenuOpen = false"
+              class="menu-item px-4 py-2 rounded hover:bg-gray-100 transition-all duration-300"
+            >
+              {{ link.label }}
+            </a>
+          </ng-container>
+
+          <!-- Register Button -->
+          <button
+            (click)="openRegisterModal(); isMobileMenuOpen = false"
+            class="menu-item mt-6 px-4 py-2 bg-primary text-tertiary rounded hover:shadow-md transition-all duration-300 playfair"
+          >
+            Quick Register
+          </button>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </nav>
+</header>
