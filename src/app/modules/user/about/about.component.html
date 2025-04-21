@@ -4,15 +4,19 @@
   <div class="container mx-auto px-4 md:px-6">
     <!-- Section Header with Classic Elements -->
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 font-serif relative inline-block">
+      <h2
+        class="text-3xl md:text-4xl font-bold text-gray-900  relative inline-block mb-5 pt-serif-regular font-serif tracking-tight uppercase"
+      >
         About Bestract
       </h2>
-      <div class="w-24 h-1 bg-amber-500 mx-auto mt-6 mb-8"></div>
-      <div class="hidden md:block absolute h-1 w-32 bg-amber-300 mx-auto left-0 right-0" style="margin-top: -4px;"></div>
+      <div
+        class="hidden md:block absolute h-1 w-32 bg-primary mx-auto left-0 right-0"
+        style="margin-top: -4px"
+      ></div>
     </div>
 
     <!-- Who We Are Section - Improved for Mobile -->
-    <div class="grid md:grid-cols-3 gap-8 items-center mb-16">
+    <div class="grid md:grid-cols-3 gap-8 items-center mb-20">
       <div class="hidden md:block">
         <img
           src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
@@ -21,11 +25,15 @@
         />
       </div>
 
-      <div class="md:col-span-2 bg-gray-50 p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm">
-        <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4 font-serif border-b border-gray-200 pb-3">
+      <div
+        class="md:col-span-2 bg-gray-50 p-6 md:p-8 rounded-lg border border-gray-200 shadow-sm"
+      >
+        <h3
+          class="text-xl playfair-medium text-center md:text-left md:text-2xl font-semibold text-gray-800 mb-4 font-serif border-b border-gray-200 pb-3"
+        >
           Who We Are
         </h3>
-        <p class="text-gray-600 mb-4 leading-relaxed">
+        <p class="text-gray-600 mb-4 leading-relaxed merriweather-medium text-justify">
           Founded in 2015, Bestract has grown from a small training center to a
           recognized institute partnering with over 50 companies across India.
           Our faculty comprises industry veterans with 15+ years of practical
@@ -33,10 +41,10 @@
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
           <div class="flex items-center">
-            <div class="bg-amber-100 p-2 rounded-full mr-3">
+            <div class="bg-cyan-50 p-2 rounded-full mr-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-amber-600"
+                class="h-6 w-6 text-tertiary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -49,13 +57,13 @@
                 />
               </svg>
             </div>
-            <span class="text-gray-700">200+ Graduates</span>
+            <span class="text-gray-700 poppins-regular">200+ Graduates</span>
           </div>
           <div class="flex items-center">
-            <div class="bg-amber-100 p-2 rounded-full mr-3">
+            <div class="bg-cyan-50 p-2 rounded-full mr-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-amber-600"
+                class="h-6 w-6 text-tertiary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -68,14 +76,14 @@
                 />
               </svg>
             </div>
-            <span class="text-gray-700">50+ Partner Companies</span>
+            <span class="text-gray-700 poppins-regular">50+ Partner Companies</span>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Mobile Image (Only shown on mobile) -->
-    <div class="md:hidden mb-8">
+    <div class="flex md:hidden mb-8">
       <img
         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
         alt="Team meeting"
@@ -84,28 +92,33 @@
     </div>
 
     <!-- Company Description with Classic Typography -->
-    <div class="max-w-3xl mx-auto mb-16">
-      <p class="text-lg text-gray-600 leading-relaxed first-letter:text-3xl first-letter:font-serif first-letter:font-bold first-letter:text-amber-600 first-letter:mr-1 first-letter:float-left">
+    <div
+      class="max-w-4xl mx-auto mb-20 rounded-lg border border-gray-200 shadow-2xl p-10"
+    >
+      <p
+        class="text-lg montserrat-regular text-gray-600 leading-relaxed first-letter:text-3xl first-letter:font-serif first-letter:font-bold first-letter:text-blue-900 first-letter:mr-1 first-letter:float-left"
+      >
         Bestract is a Bengaluru-based training institute offering
         industry-relevant programs in marketing, communication, and management.
         We bridge the gap between classroom learning and real-world business
         demands with expert mentorship, practical training, and placement
         support—preparing you to lead in a digital-first world.
       </p>
-      <div class="flex justify-center mt-8">
-        <div class="inline-block h-1 w-16 bg-amber-500"></div>
-      </div>
     </div>
 
     <!-- Mission & Vision Cards - Improved for Mobile -->
     <div class="grid md:grid-cols-2 gap-6 md:gap-10">
       <!-- Mission -->
-      <div class="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-        <div class="flex flex-col sm:flex-row items-start mb-4">
-          <div class="bg-blue-50 p-3 rounded-lg mb-4 sm:mb-0 sm:mr-6">
+      <div
+        class="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+      >
+      <div class="flex flex-col sm:items-start text-center sm:text-left mb-4">
+        <!-- Icon and Heading Row -->
+        <div class="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-start mb-3">
+          <div class="bg-blue-50 p-3 rounded-lg mb-2 sm:mb-0 sm:mr-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-blue-600"
+              class="h-8 w-8 text-tertiary"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -118,17 +131,19 @@
               />
             </svg>
           </div>
-          <div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3 font-serif border-b border-gray-100 pb-2">
-              Our Mission
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              To empower business owners, students, and job seekers; deliver
-              customized solutions to organizations of all sizes; and create
-              transformative experiences that turn aspirations into reality.
-            </p>
-          </div>
+          <h3 class="text-xl font-semibold text-gray-800 font-serif pt-serif-medium">
+            Our Mission
+          </h3>
         </div>
+      
+        <!-- Paragraph -->
+        <p class="text-gray-600 text-lg leading-relaxed max-w-lg text-justify poppins-medium">
+          To empower business owners, students, and job seekers; deliver customized
+          solutions to organizations of all sizes; and create transformative
+          experiences that turn aspirations into reality.
+        </p>
+      </div>      
+
         <img
           src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
           alt="Mission illustration"
@@ -137,12 +152,16 @@
       </div>
 
       <!-- Vision -->
-      <div class="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-        <div class="flex flex-col sm:flex-row items-start mb-4">
-          <div class="bg-amber-50 p-3 rounded-lg mb-4 sm:mb-0 sm:mr-6">
+      <div
+        class="bg-white rounded-lg border border-gray-200 p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
+      >
+      <div class="flex flex-col sm:items-start text-center sm:text-left mb-4">
+        <!-- Icon and Heading Row -->
+        <div class="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-start mb-3">
+          <div class="bg-blue-50 p-3 rounded-lg mb-2 sm:mb-0 sm:mr-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-amber-600"
+              class="h-8 w-8 text-tertiary"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -161,17 +180,19 @@
               />
             </svg>
           </div>
-          <div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3 font-serif border-b border-gray-100 pb-2">
-              Our Vision
-            </h3>
-            <p class="text-gray-600 leading-relaxed">
-              Bestract envisions leading the way in recruitment, training, and
-              consulting services, championing sustainable growth and innovation
-              while embracing diversity across industries.
-            </p>
-          </div>
+          <h3 class="text-xl font-semibold  text-gray-800 font-serif pt-serif-regular">
+            Our Vision
+          </h3>
         </div>
+      
+        <!-- Paragraph -->
+        <p class="text-gray-600 text-lg leading-relaxed max-w-lg text-justify poppins-regular">
+          Bestract envisions leading the way in recruitment, training, and consulting
+          services, championing sustainable growth and innovation while embracing
+          diversity across industries.
+        </p>
+      </div>
+      
         <img
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
           alt="Vision illustration"
@@ -179,66 +200,64 @@
         />
       </div>
     </div>
-
-    
-
-    <!-- Classic Footer Quote -->
-    <div class="mt-16 text-center">
-      <blockquote class="italic text-xl text-gray-700 max-w-2xl mx-auto px-6 py-8 border-l-4 border-amber-500 bg-gray-50">
-        "At Bestract, we don't just teach—we transform careers and businesses through practical, industry-focused education."
-      </blockquote>
-      <p class="mt-4 text-gray-600 font-serif">— The Bestract Team</p>
-    </div>
   </div>
 </section>
 
 <!-- Founder Section -->
-  <section class="py-16 md:py-24 bg-gray-50">
-    <div class="container mx-auto px-4 md:px-6">
-      <div class="max-w-4xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/3 mb-6 md:mb-0">
-            <div
-              class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-xl"
-            >
-              <img
-                src="https://bestract.com/user/Images/Razikka/razil2.jpg"
-                alt="Razil (Raz)"
-                class="w-full h-full object-cover"
-              />
-            </div>
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/3 mb-6 md:mb-0">
+          <div
+            class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-xl"
+          >
+            <img
+              src="https://bestract.com/user/Images/Razikka/razil2.jpg"
+              alt="Razil (Raz)"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <div class="md:w-2/3 md:pl-8">
-            <h2 class="text-3xl font-bold text-tertiary mb-2">Our Founder</h2>
-            <h3 class="text-xl font-semibold text-secondary mb-4">
-              Razil (Raz)
-            </h3>
-            <p class="text-gray-700 mb-4">Founder & Lead Trainer, Bestract</p>
-            <p class="text-gray-600">
-              Business consultant, influencer, and trainer with over 5 years in
-              social media marketing and startup consulting. Known for turning
-              ideas into successful brands.
-            </p>
-            <div class="mt-4 flex space-x-3">
-              <a href="#" class="text-secondary hover:text-primary"
-                ><i class="fab fa-linkedin text-2xl"></i
-              ></a>
-              <a href="#" class="text-secondary hover:text-primary"
-                ><i class="fab fa-instagram text-2xl"></i
-              ></a>
-              <a href="#" class="text-secondary hover:text-primary"
-                ><i class="fab fa-twitter text-2xl"></i
-              ></a>
-            </div>
+        </div>
+        <div class="md:w-2/3 md:pl-8">
+          <h2
+            class="text-3xl text-center md:text-left font-bold text-tertiary mb-2 pt-serif-regular font-serif tracking-tight uppercase"
+          >
+            Our Founder
+          </h2>
+          <h3
+            class="text-xl text-center md:text-left font-semibold text-secondary mb-4 poppins-regular"
+          >
+            Razil (Raz)
+          </h3>
+          <p class="text-gray-800 mb-4 merriweather-regular">Founder & Lead Trainer, Bestract</p>
+          <p class="text-gray-600 montserrat-base">
+            Business consultant, influencer, and trainer with over 5 years in
+            social media marketing and startup consulting. Known for turning
+            ideas into successful brands.
+          </p>
+          <div class="mt-4 flex space-x-3">
+            <a href="#" class="text-secondary hover:text-primary"
+              ><i class="fab fa-linkedin text-2xl"></i
+            ></a>
+            <a href="#" class="text-secondary hover:text-primary"
+              ><i class="fab fa-instagram text-2xl"></i
+            ></a>
+            <a href="#" class="text-secondary hover:text-primary"
+              ><i class="fab fa-twitter text-2xl"></i
+            ></a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Value Proposition -->
+<!-- Value Proposition -->
 <section class="py-14 bg-white">
-  <div class="text-center mb-16 md:mb-20">
+  <blockquote
+    class="italic text-xl text-gray-700 max-w-2xl mx-auto px-6 py-8 border-l-4 border-primary bg-gray-50"
+  >
     <p class="text-xl md:text-2xl font-medium text-gray-800 italic mb-6">
       "We don't just train — we place."
     </p>
@@ -246,41 +265,40 @@
       Leveraging our extensive network to connect students with opportunities
       in:
     </p>
-  </div>
-
+  </blockquote>
   <!-- Industry Grid -->
   <div
-    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 p-10"
   >
     <div
-      class="bg-white p-6 rounded-xl shadow hover:shadow-lg text-center transition"
+      class="bg-white border border-primary p-6 rounded-xl shadow hover:shadow-lg text-center transition"
     >
       <i class="bx bx-bullseye text-4xl text-tertiary mb-3"></i>
-      <p class="text-gray-700 font-medium">Marketing Agencies</p>
+      <p class="text-gray-700 font-medium pt-serif-bold">Marketing Agencies</p>
     </div>
     <div
-      class="bg-white p-6 rounded-xl shadow hover:shadow-lg text-center transition"
+      class="bg-white border border-primary p-6 rounded-xl shadow hover:shadow-lg text-center transition"
     >
       <i class="bx bx-rocket text-4xl text-secondary mb-3"></i>
-      <p class="text-gray-700 font-medium">Startups</p>
+      <p class="text-gray-700 font-medium pt-serif-bold">Startups</p>
     </div>
     <div
-      class="bg-white p-6 rounded-xl shadow hover:shadow-lg text-center transition"
+      class="bg-white border border-primary p-6 rounded-xl shadow hover:shadow-lg text-center transition"
     >
       <i class="bx bx-group text-4xl text-tertiary mb-3"></i>
-      <p class="text-gray-700 font-medium">Influencer & PR Firms</p>
+      <p class="text-gray-700 font-medium pt-serif-bold">Influencer & PR Firms</p>
     </div>
     <div
-      class="bg-white p-6 rounded-xl shadow hover:shadow-lg text-center transition"
+      class="bg-white border border-primary p-6 rounded-xl shadow hover:shadow-lg text-center transition"
     >
       <i class="bx bx-buildings text-4xl text-secondary mb-3"></i>
-      <p class="text-gray-700 font-medium">Hospitality & Real Estate</p>
+      <p class="text-gray-700 font-medium pt-serif-bold">Hospitality & Real Estate</p>
     </div>
     <div
-      class="bg-white p-6 rounded-xl shadow hover:shadow-lg text-center transition"
+      class="bg-white border border-primary p-6 rounded-xl shadow hover:shadow-lg text-center transition"
     >
       <i class="bx bx-store text-4xl text-tertiary mb-3"></i>
-      <p class="text-gray-700 font-medium">FMCG & Retail Brands</p>
+      <p class="text-gray-700 font-medium pt-serif-bold">FMCG & Retail Brands</p>
     </div>
   </div>
 </section>
