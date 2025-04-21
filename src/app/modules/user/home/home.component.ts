@@ -2,10 +2,11 @@ import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { HeaderComponent } from '../../../shared/user/header/header.component';
 import { heroAnimations, zoomSlide } from '../../../shared/constants/animation';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { FooterComponent } from '../../../shared/user/footer/footer.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, CommonModule],
+  imports: [HeaderComponent,FooterComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [heroAnimations,zoomSlide]

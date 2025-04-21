@@ -133,3 +133,17 @@
 .hero-container h1 span:nth-child(4) {
   transform: scale(0.5);
 }
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.05);
+  }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-float-slow {
+  animation: float 10s ease-in-out infinite;
+}

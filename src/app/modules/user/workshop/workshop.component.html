@@ -1,1 +1,154 @@
 <app-header></app-header>
+<!-- Demo Registration Form -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="max-w-5xl mx-auto">
+      <div
+        class="flex flex-col md:flex-row bg-white rounded-lg shadow-xl overflow-hidden"
+      >
+        <!-- Info Panel -->
+        <div class="md:w-1/2 bg-tertiary p-8 text-white">
+          <h2 class="text-2xl font-bold mb-4">
+            Register for a Free Demo Class
+          </h2>
+          <p class="mb-4">
+            Experience our teaching methodology and course curriculum before
+            making a decision.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mt-1 mr-2"></i>
+              <span>Meet our expert trainers</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mt-1 mr-2"></i>
+              <span>Understand our practical approach</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mt-1 mr-2"></i>
+              <span>Get your questions answered</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle mt-1 mr-2"></i>
+              <span>No obligation to enroll</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form Panel -->
+        <div class="md:w-1/2 p-8">
+          <form class="space-y-4">
+            <div>
+              <label for="name" class="block text-gray-700 font-medium mb-1"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 font-medium mb-1"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone" class="block text-gray-700 font-medium mb-1"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              />
+            </div>
+            <div>
+              <label for="course" class="block text-gray-700 font-medium mb-1"
+                >Course Interested In</label
+              >
+              <select
+                id="course"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                required
+              >
+                <option disabled selected value="">Select a course</option>
+                <option>Digital Marketing & Social Media Strategy</option>
+                <option>Communication & Brand Management</option>
+                <option>Business & Marketing Management</option>
+                <option>Finishing School Program</option>
+                <option>Custom Workshop & Corporate Training</option>
+              </select>
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-gray-700 font-medium mb-1"
+                >Any Questions?</label
+              >
+              <textarea
+                id="message"
+                rows="3"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-primary text-white py-3 rounded-lg font-semibold shadow-md hover:bg-opacity-90 transition"
+            >
+              Register for Demo
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Added Company Values with Classic Design -->
+<div class="mt-16">
+  <h3 class="text-2xl font-serif text-center font-semibold text-gray-800 mb-12 relative">
+    Our Values
+    <span class="block w-16 h-1 bg-amber-500 mx-auto mt-4"></span>
+  </h3>
+  
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
+      <div class="mx-auto w-16 h-16 flex items-center justify-center bg-blue-50 rounded-full mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      </div>
+      <h4 class="text-lg font-serif font-semibold text-gray-800 mb-2">Excellence</h4>
+      <p class="text-gray-600">We are committed to delivering top-tier education and training services.</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
+      <div class="mx-auto w-16 h-16 flex items-center justify-center bg-amber-50 rounded-full mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      </div>
+      <h4 class="text-lg font-serif font-semibold text-gray-800 mb-2">Collaboration</h4>
+      <p class="text-gray-600">We believe in the power of partnerships and working together for success.</p>
+    </div>
+    
+    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm text-center hover:shadow-md transition-shadow">
+      <div class="mx-auto w-16 h-16 flex items-center justify-center bg-green-50 rounded-full mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+        </svg>
+      </div>
+      <h4 class="text-lg font-serif font-semibold text-gray-800 mb-2">Innovation</h4>
+      <p class="text-gray-600">We constantly evolve our approach to meet the changing demands of the industry.</p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -18,8 +18,10 @@
 
       <!-- Overlays -->
       <div class="absolute inset-0 bg-white/20"></div>
-      <div class="absolute inset-0 bg-black/30"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+      <!-- <div class="absolute inset-0 bg-black/30"></div> -->
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"
+      ></div>
     </div>
 
     <!-- Content -->
@@ -78,60 +80,239 @@
   </div> -->
 
   <!-- About Section -->
-  <section id="about" class="py-16 md:py-24 bg-gray-50">
+  <section id="about" class="py-20 bg-gray-50 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-tertiary">
-          Empowering the Next Generation of Professionals
-        </h2>
-        <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-8"></div>
-      </div>
-      <div class="flex flex-col md:flex-row">
-        <div class="md:w-2/3 pr-0 md:pr-8 mb-8 md:mb-0">
-          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-            Bestract is a Bengaluru-based training institute offering
-            industry-relevant programs in marketing, communication, and
-            management. Our goal is to bridge the gap between classroom learning
-            and real-world business demands. With practical training, expert
-            mentorship, and placement support, we prepare you to lead in the
-            digital-first business world.
-          </p>
+      <div
+        class="bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-xl md:flex items-center gap-5"
+      >
+        <div class="md:w-1/3">
+          <img
+            src="https://www.aandmedu.in/wp-content/uploads/2020/04/Digital-Marketing.jpg"
+            alt="Bestract Illustration"
+            class="w-full rounded-lg"
+          />
         </div>
-        <div class="md:w-1/3 bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-tertiary mb-4">Why Bestract?</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span>Certified programs curated by industry experts</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span>Real-time projects & internship opportunities</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span>Influencer-based marketing exposure</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span>Career guidance & job placement support</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
-              <span>Online + Offline classes</span>
-            </li>
-          </ul>
+        <div
+          class="md:w-2/3 flex flex-col justify-between h-full mb-8 md:mb-0 md:pr-10"
+        >
+          <div>
+            <p class="text-gray-700 text-lg leading-relaxed text-justify mb-6 merriweather-regular">
+              <span class="font-semibold text-primary">Bestract</span> is a
+              Bengaluru-based training institute offering industry-relevant
+              programs in marketing, communication, and management. We emphasize
+              practical learning, expert mentorship, and job readiness to ensure
+              you step confidently into the digital-first workforce.
+            </p>
+          </div>
+          <p class="text-gray-900 text-lg mt-auto text-center poppins-medium">
+            Bridging the gap between classrooms and the real business world.
+          </p>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Why Bestract Section -->
+  <section
+    id="why-bestract"
+    class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden"
+  >
+    <div
+      class="relative max-w-6xl mx-auto px-4 md:px-6 z-10 overflow-hidden rounded-none md:rounded-3xl shadow-xl md:shadow-2xl group"
+    >
+      <!-- Background GIF -->
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/639329e22430977723ae8a6e/1689229135628-V2O22SMILJSIWUXB9TEY/B2B+Digital+Marketing-+Unleashing+the+Power+of+Strategic+Marketing.gif"
+        alt="Marketing GIF"
+        class="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none group-hover:scale-105 transition-transform duration-700"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"
+      ></div>
+
+      <!-- Main content -->
+      <div
+        class="relative rounded-2xl md:rounded-3xl p-6 md:p-12 transform transition-all hover:shadow-3xl hover:-translate-y-1 duration-500"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between mb-8 md:mb-14 gap-6 md:gap-10"
+        >
+          <div class="text-center flex-1 md:text-center lg:text-center">
+            <h3
+              class="merriweather-regular text-3xl md:text-5xl font-bold bg-clip-text text-white bg-gradient-to-r from-primary to-tertiary mb-3 md:mb-4 tracking-tight"
+            >
+              Why Choose Bestract?
+            </h3>
+            <p class="text-base md:text-lg text-gray-100 max-w-2xl mx-auto playfair-regular">
+              We're redefining professional education with outcomes that matter
+            </p>
+          </div>
+          <div class="hidden md:block">
+            <div class="relative w-24 h-24 md:w-24 md:h-24">
+              <div
+                class="absolute inset-0 bg-gradient-to-tr from-blue-100 to-cyan-200 rounded-lg rotate-6"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-tr from-blue-200 to-cyan-300 rounded-lg -rotate-6"
+              ></div>
+              <div
+                class="absolute inset-0 bg-white rounded-lg flex items-center justify-center shadow-inner"
+              >
+                <i class="bx bx-universal-access text-4xl md:text-5xl text-blue-600"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2 md:gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="group flex gap-4 sm:gap-6 items-center p-4 md:p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 active:border-primary active:shadow-md hover:border-primary hover:shadow-md transition-all duration-300"
+          >
+            <div
+              class="bg-gradient-to-br from-primary to-blue-600 p-3 rounded-xl text-2xl md:text-3xl text-white shadow-lg active:scale-110 group-hover:scale-110 transition-transform self-center"
+            >
+              <i class="bx bx-badge-check"></i>
+            </div>
+            <div class="text-center sm:text-left">
+              <h4 class="text-lg md:text-xl font-semibold text-gray-800 mb-1 md:mb-2 merriweather-medium">
+                Expert-Curated Programs
+              </h4>
+              <p class="text-sm md:text-base text-gray-600 poppins-regular">
+                Certified courses designed by industry leaders and top professionals.
+              </p>
+            </div>
+          </div>
+        
+          <!-- Feature 2 -->
+        
+          <div
+            class="group flex gap-4 sm:gap-6 items-center p-4 md:p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 active:border-primary active:shadow-md hover:border-primary hover:shadow-md transition-all duration-300"
+          >
+            <div
+              class="bg-gradient-to-br from-amber-500 to-orange-600 p-3 rounded-xl text-2xl md:text-3xl text-white shadow-lg active:scale-110 group-hover:scale-110 transition-transform self-center"
+            >
+              <i class="bx bx-briefcase-alt-2"></i>
+            </div>
+            <div class="text-center sm:text-left">
+              <h4 class="text-lg md:text-xl font-semibold text-gray-800 mb-1 md:mb-2 merriweather-medium">
+                Real-World Experience
+              </h4>
+              <p class="text-sm md:text-base text-gray-600 poppins-regular">
+                Hands-on projects and guaranteed internship opportunities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="group flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-5 p-4 md:p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 active:border-primary active:shadow-md hover:border-primary hover:shadow-md transition-all duration-300"
+          >
+            <div
+              class="bg-gradient-to-br from-purple-500 to-pink-600 p-3 rounded-xl text-2xl md:text-3xl text-white shadow-lg active:scale-110 group-hover:scale-110 transition-transform self-center"
+            >
+              <i class="bx bx-broadcast"></i>
+            </div>
+            <div class="text-center sm:text-left">
+              <h4
+                class="text-lg md:text-xl font-semibold text-gray-800 mb-1 md:mb-2 merriweather-medium"
+              >
+                Influencer Network
+              </h4>
+              <p class="text-sm md:text-base text-gray-600 poppins-regular">
+                Get exposure through our partnered influencer marketing platform.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="group flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-5 p-4 md:p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 active:border-primary active:shadow-md hover:border-primary hover:shadow-md transition-all duration-300"
+          >
+            <div
+              class="bg-gradient-to-br from-emerald-500 to-teal-600 p-3 rounded-xl text-2xl md:text-3xl text-white shadow-lg active:scale-110 group-hover:scale-110 transition-transform self-center"
+            >
+              <i class="bx bx-user-check"></i>
+            </div>
+            <div class="text-center sm:text-left">
+              <h4
+                class="text-lg md:text-xl font-semibold text-gray-800 mb-1 md:mb-2 merriweather-medium"
+              >
+                Career Launchpad
+              </h4>
+              <p class="text-sm md:text-base text-gray-600 poppins-regular">
+                Dedicated placement support with 90%+ hiring rate.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div
+            class="group flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-5 p-4 md:p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 active:border-primary active:shadow-md hover:border-primary hover:shadow-md transition-all duration-300"
+          >
+            <div
+              class="bg-gradient-to-br from-rose-500 to-red-600 p-3 rounded-xl text-2xl md:text-3xl text-white shadow-lg active:scale-110 group-hover:scale-110 transition-transform self-center"
+            >
+              <i class="bx bx-calendar-event"></i>
+            </div>
+            <div class="text-center sm:text-left">
+              <h4
+                class="text-lg md:text-xl font-semibold text-gray-800 mb-1 md:mb-2 merriweather-medium"
+              >
+                Free Tailored Workshops
+              </h4>
+              <p class="text-sm md:text-base text-gray-600 poppins-regular">
+                Customized skill-building sessions designed for your specific
+                career goals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div
+            class="group flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-5 p-4 md:p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-100 active:border-primary active:shadow-md hover:border-primary hover:shadow-md transition-all duration-300"
+          >
+            <div
+              class="bg-gradient-to-br from-cyan-500 to-blue-600 p-3 rounded-xl text-2xl md:text-3xl text-white shadow-lg active:scale-110 group-hover:scale-110 transition-transform self-center"
+            >
+              <i class="bx bx-devices"></i>
+            </div>
+            <div class="flex-1 text-center sm:text-left">
+              <h4
+                class="text-lg md:text-xl font-semibold text-gray-800 mb-1 md:mb-2 merriweather-medium"
+              >
+                Hybrid Learning Ecosystem
+              </h4>
+              <p class="text-sm md:text-base text-gray-600 poppins-regular">
+                Blending online convenience with expert mentorship and AI-powered learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <style>
+    @keyframes blob {
+      0% { transform: translate(0px, 0px) scale(1); }
+      33% { transform: translate(30px, -50px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.9); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    .animate-blob {
+      animation: blob 7s infinite;
+    }
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+  </style> -->
   </section>
 
   <!-- Courses Section -->
   <section id="courses" class="py-16 md:py-24">
     <div class="container mx-auto px-4 md:px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-tertiary">
-          Courses Offered
+        <h2 class="text-3xl md:text-4xl font-bold text-tertiary montserrat-base">
+          COURSES
         </h2>
         <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-8"></div>
       </div>
@@ -142,16 +323,16 @@
         >
           <div class="h-3 bg-primary"></div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-tertiary mb-3">
+            <h3 class="text-xl font-bold text-tertiary mb-3 montserrat-base">
               Digital Marketing & Social Media Strategy
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4 pt-serif-regular">
               Learn performance marketing, content creation, influencer
               marketing, and campaign management.
             </p>
             <a
               href="#"
-              class="inline-block text-secondary font-semibold hover:text-primary transition"
+              class="inline-block text-secondary font-semibold hover:text-primary transition playfair-regular text-md"
             >
               Learn more <i class="fas fa-arrow-right ml-1"></i>
             </a>
@@ -217,9 +398,9 @@
             </p>
             <a
               href="#"
-              class="inline-block text-secondary font-semibold hover:text-primary transition"
+              class=" text-secondary font-semibold hover:text-primary transition"
             >
-              Learn more <i class="fas fa-arrow-right ml-1"></i>
+              Learn more<i class='bx bx-chevrons-right ml-1' ></i>
             </a>
           </div>
         </div>
@@ -275,53 +456,120 @@
   </section>
 
   <!-- Placements Section -->
-  <section id="placements" class="py-16 md:py-24 bg-gray-50">
+  <section id="placements" class="py-14  bg-gray-50 ">
     <div class="container mx-auto px-4 md:px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-tertiary">
+      <!-- Section Header -->
+      <div class="text-center mb-14 md:mb-20">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-tertiary pt-serif-regular font-serif tracking-tight uppercase">
           Placements & Internships
         </h2>
-        <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-6"></div>
-        <p class="text-xl text-gray-600">We don't just train—we place.</p>
-      </div>
-      <div class="max-w-3xl mx-auto">
-        <p class="text-lg text-gray-700 mb-8 text-center">
-          Our strong network in the business and media world helps students
-          secure internships and jobs in:
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 mb-8 rounded-full"></div>
+        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed poppins-regular">
+          Our students have secured positions with industry leaders across media, tech, and marketing sectors.
         </p>
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center"
-        >
-          <div class="bg-white p-4 rounded-lg shadow-md">
-            <i class="fas fa-bullhorn text-3xl text-primary mb-2"></i>
-            <p>Marketing Agencies</p>
+      </div>
+  
+      <!-- Logo Grid -->
+      <div class="mb-16 md:mb-20">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 items-center">
+          <!-- Company Logo 1 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://bestract.com/user/partners/Castle.png" alt="Company 1" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
           </div>
-          <div class="bg-white p-4 rounded-lg shadow-md">
-            <i class="fas fa-rocket text-3xl text-secondary mb-2"></i>
-            <p>Startups</p>
+          <!-- Company Logo 2 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://bestract.com/user/partners/IZee%20Bschool%20Logo.png" alt="Company 2" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
           </div>
-          <div class="bg-white p-4 rounded-lg shadow-md">
-            <i class="fas fa-users text-3xl text-tertiary mb-2"></i>
-            <p>Influencer & PR Firms</p>
+          <!-- Company Logo 3 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://bestract.com/user/partners/Iaeknir2.jpg" alt="Company 3" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
           </div>
-          <div class="bg-white p-4 rounded-lg shadow-md">
-            <i class="fas fa-hotel text-3xl text-primary mb-2"></i>
-            <p>Hospitality & Real Estate</p>
+          <!-- Company Logo 4 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://bestract.com/user/partners/Lulu.png" alt="Company 4" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
           </div>
-          <div class="bg-white p-4 rounded-lg shadow-md">
-            <i class="fas fa-shopping-bag text-3xl text-secondary mb-2"></i>
-            <p>FMCG & Retail Brands</p>
+          <!-- Company Logo 5 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://bestract.com/user/partners/Mibo%20-%20Logo.png" alt="Company 5" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
           </div>
+          <!-- Company Logo 6 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://bestract.com/user/partners/NahadhiMandhi.jpg" alt="Company 1" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
+          </div>
+          <!-- Company Logo 7 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://bestract.com/user/partners/OFCJNS.jpg" alt="Company 2" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
+          </div>
+          <!-- Company Logo 8 -->
+          <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+            <img src="https://studyinbengaluru.com/sib-violet.png" alt="Company 3" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
+          </div>
+         <!-- Company Logo 9 -->
+         <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+          <img src="https://bestract.com/user/partners/SoofiMandhi.jpg" alt="Company 1" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
         </div>
+        <!-- Company Logo 10 -->
+        <div class="flex justify-center items-center bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/30">
+          <img src="https://bestract.com/user/partners/Subz.png" alt="Company 2" class="h-8 md:h-20 object-contain opacity-80 hover:opacity-100 transition duration-300" loading="lazy" />
+        </div>
+       
+        </div>
+      </div>      
+    </div>
+  </section>
+
+  <!-- Instagram Feed Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-tertiary  pt-serif-regular font-serif tracking-tight uppercase">
+          Follow Our Journey
+        </h2>
+        <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-8"></div>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-30 max-w-5xl mx-auto">
+        <div class="rounded-xl overflow-hidden shadow-lg aspect-video w-full max-w-[500px] mx-auto">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/bixR-KIJKYM?si=bHv5oItLKGteCuVl"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg aspect-video w-full max-w-[500px] mx-auto">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/bixR-KIJKYM?si=bHv5oItLKGteCuVl"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+  
+      <div class="text-center mt-18">
+        <a
+          href="https://www.youtube.com/@BestractPvtLtd" target="_blank"
+          class="inline-flex items-center text-secondary hover:text-primary transition font-semibold"
+        >
+          <i class='bx bxl-youtube mr-2 text-xl'></i> Subscribe on YouTube
+        </a>
       </div>
     </div>
   </section>
 
+
   <!-- Testimonials Section -->
-  <section id="testimonials" class="py-16 md:py-24">
+  <section id="testimonials">
     <div class="container mx-auto px-4 md:px-6">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-tertiary">
+        <h2 class="text-3xl md:text-4xl font-bold text-tertiary  pt-serif-regular font-serif tracking-tight uppercase">
           Success Stories
         </h2>
         <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-8"></div>
@@ -378,235 +626,123 @@
       </div>
     </div>
   </section>
-
-  <!-- Founder Section -->
-  <section class="py-16 md:py-24 bg-gray-50">
-    <div class="container mx-auto px-4 md:px-6">
-      <div class="max-w-4xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/3 mb-6 md:mb-0">
-            <div
-              class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-xl"
+  
+<!-- Faculty Profiles Section -->
+<section class="py-16 md:py-24">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-tertiary  pt-serif-regular font-serif tracking-tight uppercase">
+        Our Faculty
+      </h2>
+      <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-8"></div>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Learn from industry professionals with real-world experience
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Faculty 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img
+          src="https://media.istockphoto.com/id/496676304/photo/beautiful-girl-on-the-phone.jpg?s=170667a&w=0&k=20&c=bGvzpMK7DQCYzSjMBlQYdV3sFFbd666td4U4tyngVO8="
+          alt="Faculty member"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-tertiary">Ananya K.</h3>
+          <p class="text-secondary font-medium mb-2">
+            Digital Marketing Specialist
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            Former Lead at a Top Advertising Agency with 8+ years experience
+            in performance marketing
+          </p>
+          <div class="flex space-x-2">
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >SEO</span
             >
-              <img
-                src="https://bestract.com/user/Images/Razikka/razil2.jpg"
-                alt="Razil (Raz)"
-                class="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          <div class="md:w-2/3 md:pl-8">
-            <h2 class="text-3xl font-bold text-tertiary mb-2">Our Founder</h2>
-            <h3 class="text-xl font-semibold text-secondary mb-4">
-              Razil (Raz)
-            </h3>
-            <p class="text-gray-700 mb-4">Founder & Lead Trainer, Bestract</p>
-            <p class="text-gray-600">
-              Business consultant, influencer, and trainer with over 5 years in
-              social media marketing and startup consulting. Known for turning
-              ideas into successful brands.
-            </p>
-            <div class="mt-4 flex space-x-3">
-              <a href="#" class="text-secondary hover:text-primary"
-                ><i class="fab fa-linkedin text-2xl"></i
-              ></a>
-              <a href="#" class="text-secondary hover:text-primary"
-                ><i class="fab fa-instagram text-2xl"></i
-              ></a>
-              <a href="#" class="text-secondary hover:text-primary"
-                ><i class="fab fa-twitter text-2xl"></i
-              ></a>
-            </div>
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >SEM</span
+            >
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >Analytics</span
+            >
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Faculty Profiles Section -->
-  <section class="py-16 md:py-24">
-    <div class="container mx-auto px-4 md:px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-tertiary">
-          Our Faculty
-        </h2>
-        <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-8"></div>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Learn from industry professionals with real-world experience
-        </p>
+      <!-- Faculty 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img
+          src="https://img.freepik.com/free-photo/handsome-stylish-male-entrepreneur-glasses-with-laptop_176420-17911.jpg"
+          alt="Faculty member"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-tertiary">Vikram S.</h3>
+          <p class="text-secondary font-medium mb-2">
+            Brand Communication Expert
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            Worked with Fortune 500 brands on communication strategy and brand
+            storytelling
+          </p>
+          <div class="flex space-x-2">
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >PR</span
+            >
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >Branding</span
+            >
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >Content</span
+            >
+          </div>
+        </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Faculty 1 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img
-            src="https://media.istockphoto.com/id/496676304/photo/beautiful-girl-on-the-phone.jpg?s=170667a&w=0&k=20&c=bGvzpMK7DQCYzSjMBlQYdV3sFFbd666td4U4tyngVO8="
-            alt="Faculty member"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-tertiary">Ananya K.</h3>
-            <p class="text-secondary font-medium mb-2">
-              Digital Marketing Specialist
-            </p>
-            <p class="text-gray-600 text-sm mb-3">
-              Former Lead at a Top Advertising Agency with 8+ years experience
-              in performance marketing
-            </p>
-            <div class="flex space-x-2">
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >SEO</span
-              >
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >SEM</span
-              >
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >Analytics</span
-              >
-            </div>
-          </div>
-        </div>
 
-        <!-- Faculty 2 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img
-            src="https://img.freepik.com/free-photo/handsome-stylish-male-entrepreneur-glasses-with-laptop_176420-17911.jpg"
-            alt="Faculty member"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-tertiary">Vikram S.</h3>
-            <p class="text-secondary font-medium mb-2">
-              Brand Communication Expert
-            </p>
-            <p class="text-gray-600 text-sm mb-3">
-              Worked with Fortune 500 brands on communication strategy and brand
-              storytelling
-            </p>
-            <div class="flex space-x-2">
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >PR</span
-              >
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >Branding</span
-              >
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >Content</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Faculty 3 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <img
-            src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?cs=srgb&dl=pexels-olly-712513.jpg&fm=jpg"
-            alt="Faculty member"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-tertiary">Priya M.</h3>
-            <p class="text-secondary font-medium mb-2">
-              Business Strategy Consultant
-            </p>
-            <p class="text-gray-600 text-sm mb-3">
-              Former startup advisor with experience in business development and
-              operations
-            </p>
-            <div class="flex space-x-2">
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >Strategy</span
-              >
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >Operations</span
-              >
-              <span
-                class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
-                >Growth</span
-              >
-            </div>
+      <!-- Faculty 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img
+          src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?cs=srgb&dl=pexels-olly-712513.jpg&fm=jpg"
+          alt="Faculty member"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-tertiary">Priya M.</h3>
+          <p class="text-secondary font-medium mb-2">
+            Business Strategy Consultant
+          </p>
+          <p class="text-gray-600 text-sm mb-3">
+            Former startup advisor with experience in business development and
+            operations
+          </p>
+          <div class="flex space-x-2">
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >Strategy</span
+            >
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >Operations</span
+            >
+            <span
+              class="bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs"
+              >Growth</span
+            >
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Instagram Feed Section -->
-  <section class="py-16 md:py-24 bg-gray-50">
-    <div class="container mx-auto px-4 md:px-6">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-tertiary">
-          Follow Our Journey
-        </h2>
-        <div class="w-24 h-1 bg-primary mx-auto mt-4 mb-8"></div>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          storiesfrombengaluru
-        </p>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCThzmAgFyAl5NhWqlfUSTQYCjck9NTtDuzg&s"
-            alt="Instagram post"
-            class="w-full aspect-square object-cover"
-          />
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img
-            src="https://etimg.etb2bimg.com/thumb/msid-100934135,imgsize-2087540,width-1200,height=765,overlay-ethospitality/restaurants/macaw-by-stories-a-craft-brewery-and-kitchen-opens-in-bengaluru.jpg"
-            alt="Instagram post"
-            class="w-full aspect-square object-cover"
-          />
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYL_u-9vVeFCFP5C882oYOnMjryfJZtFJOJw&s"
-            alt="Instagram post"
-            class="w-full aspect-square object-cover"
-          />
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img
-            src="https://www.alphonsostories.com/AlphonSoStoriesImages/SubServiceImage/a-victorian-trail-in-bengaluru-3-AlphonSo-Stories.jpg"
-            alt="Instagram post"
-            class="w-full aspect-square object-cover"
-          />
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img
-            src="https://b.zmtcdn.com/data/pictures/3/20526253/3f7979014b038d5b6886e09d8b64cc60_featured_v2.jpg"
-            alt="Instagram post"
-            class="w-full aspect-square object-cover"
-          />
-        </div>
-        <div class="bg-white rounded-lg overflow-hidden shadow-md">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYL_u-9vVeFCFP5C882oYOnMjryfJZtFJOJw&s"
-            alt="Instagram post"
-            class="w-full aspect-square object-cover"
-          />
-        </div>
-      </div>
-      <div class="text-center mt-8">
-        <a
-          href="#"
-          class="inline-flex items-center text-secondary hover:text-primary transition font-semibold"
-        >
-          <i class="fab fa-instagram mr-2"></i> Follow us on Instagram
-        </a>
-      </div>
-    </div>
-  </section>
-
+  </div>
+</section>
   <!-- CTA Section -->
-  <section
+  <!-- <section
     class="py-16 md:py-20 bg-gradient-to-r from-tertiary to-secondary text-black"
   >
     <div class="container mx-auto px-4 md:px-6">
@@ -636,125 +772,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Demo Registration Form -->
-  <section class="py-16 md:py-24 bg-gray-50">
-    <div class="container mx-auto px-4 md:px-6">
-      <div class="max-w-5xl mx-auto">
-        <div
-          class="flex flex-col md:flex-row bg-white rounded-lg shadow-xl overflow-hidden"
-        >
-          <!-- Info Panel -->
-          <div class="md:w-1/2 bg-tertiary p-8 text-white">
-            <h2 class="text-2xl font-bold mb-4">
-              Register for a Free Demo Class
-            </h2>
-            <p class="mb-4">
-              Experience our teaching methodology and course curriculum before
-              making a decision.
-            </p>
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <i class="fas fa-check-circle mt-1 mr-2"></i>
-                <span>Meet our expert trainers</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check-circle mt-1 mr-2"></i>
-                <span>Understand our practical approach</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check-circle mt-1 mr-2"></i>
-                <span>Get your questions answered</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fas fa-check-circle mt-1 mr-2"></i>
-                <span>No obligation to enroll</span>
-              </li>
-            </ul>
-          </div>
+  
 
-          <!-- Form Panel -->
-          <div class="md:w-1/2 p-8">
-            <form class="space-y-4">
-              <div>
-                <label for="name" class="block text-gray-700 font-medium mb-1"
-                  >Full Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  required
-                />
-              </div>
-              <div>
-                <label for="email" class="block text-gray-700 font-medium mb-1"
-                  >Email Address</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  required
-                />
-              </div>
-              <div>
-                <label for="phone" class="block text-gray-700 font-medium mb-1"
-                  >Phone Number</label
-                >
-                <input
-                  type="tel"
-                  id="phone"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  required
-                />
-              </div>
-              <div>
-                <label for="course" class="block text-gray-700 font-medium mb-1"
-                  >Course Interested In</label
-                >
-                <select
-                  id="course"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                  required
-                >
-                  <option disabled selected value="">Select a course</option>
-                  <option>Digital Marketing & Social Media Strategy</option>
-                  <option>Communication & Brand Management</option>
-                  <option>Business & Marketing Management</option>
-                  <option>Finishing School Program</option>
-                  <option>Custom Workshop & Corporate Training</option>
-                </select>
-              </div>
-              <div>
-                <label
-                  for="message"
-                  class="block text-gray-700 font-medium mb-1"
-                  >Any Questions?</label
-                >
-                <textarea
-                  id="message"
-                  rows="3"
-                  class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-primary text-white py-3 rounded-lg font-semibold shadow-md hover:bg-opacity-90 transition"
-              >
-                Register for Demo
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Brochure Download CTA -->
+  <!-- Brochure Download CTA
   <section
     class="py-12 md:py-16 bg-gradient-to-r from-primary to-secondary text-black"
   >
@@ -778,131 +800,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white pt-12 pb-6">
-    <div class="container mx-auto px-4 md:px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-        <div>
-          <div class="text-2xl font-bold mb-4">
-            <span class="text-primary">Be</span
-            ><span class="text-secondary">stract</span>
-          </div>
-          <p class="text-gray-400 mb-4">
-            India's leading institute for Marketing, Communication & Management
-            training.
-          </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-primary transition">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-primary transition">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-primary transition">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-primary transition">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-          <ul class="space-y-2">
-            <li>
-              <a
-                href="#home"
-                class="text-gray-400 hover:text-primary transition"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about"
-                class="text-gray-400 hover:text-primary transition"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#courses"
-                class="text-gray-400 hover:text-primary transition"
-                >Courses</a
-              >
-            </li>
-            <li>
-              <a
-                href="#testimonials"
-                class="text-gray-400 hover:text-primary transition"
-                >Testimonials</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="text-gray-400 hover:text-primary transition"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Our Courses</h4>
-          <ul class="space-y-2">
-            <li>
-              <a href="#" class="text-gray-400 hover:text-primary transition"
-                >Digital Marketing</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 hover:text-primary transition"
-                >Brand Management</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 hover:text-primary transition"
-                >Business Management</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 hover:text-primary transition"
-                >Finishing School</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 hover:text-primary transition"
-                >Corporate Training</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
-          <ul class="space-y-3">
-            <li class="flex items-start">
-              <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
-              <span class="text-gray-400">Bengaluru, Karnataka, India</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-phone-alt mt-1 mr-3 text-primary"></i>
-              <span class="text-gray-400">+91 98800 0879</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-envelope mt-1 mr-3 text-primary"></i>
-              <span class="text-gray-400">hellobestract.in</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="border-t border-gray-700 pt-6 text-center text-gray-500 text-sm"
-      >
-        <p>© 2025 Bestract. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
+  
 
   <!-- Back to Top Button -->
   <a
@@ -912,3 +812,4 @@
     <i class="fas fa-arrow-up"></i>
   </a>
 </main>
+<app-footer></app-footer>
