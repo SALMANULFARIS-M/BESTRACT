@@ -72,6 +72,8 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+
 .playfair-medium {
   font-family: "Playfair", serif;
   font-optical-sizing: auto;
@@ -79,6 +81,13 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .montserrat {

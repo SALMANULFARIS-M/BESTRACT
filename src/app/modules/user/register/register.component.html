@@ -1,0 +1,150 @@
+<app-header></app-header>
+<!--  Registration Form -->
+<section class="py-16 md:py-24 bg-gray-50">
+  <div class="container mx-auto px-4 md:px-6">
+    <div class="max-w-5xl mx-auto">
+      <div
+        class="flex flex-col md:flex-row bg-white rounded-lg shadow-xl overflow-hidden"
+      >
+        <!-- Info Panel -->
+        <div
+          class="relative md:w-1/2 bg-gradient-to-br from-blue-600 to-purple-700 p-8 text-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+        >
+          <!-- Background GIF -->
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/639329e22430977723ae8a6e/1689229135628-V2O22SMILJSIWUXB9TEY/B2B+Digital+Marketing-+Unleashing+the+Power+of+Strategic+Marketing.gif"
+            alt="Marketing GIF"
+            class="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none group-hover:scale-105 transition-transform duration-700"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"
+          ></div>
+
+          <h2 class="relative text-3xl font-bold mb-6 text-white playfair-display poppins-regular">
+            Join Our Transformative Learning Experience
+          </h2>
+          <p class="relative mb-6 text-lg text-blue-100 playfair-display">
+            Discover the perfect learning path for you - from interactive demos
+            to immersive online classes and hands-on workshops. Your journey
+            starts here.
+          </p>
+          <ul class="feature-list mb-8 relative montserrat-base">
+            <li class="flex items-start group">
+              <i class="bx bx-check-circle mt-1 mr-3 text-primary group-hover:text-green-200 transition-colors"></i>
+              <span class="text-lg group-hover:text-blue-100 transition-colors">
+                Expert-Led Interactive Classes
+              </span>
+            </li>
+            <li class="flex items-start group">
+              <i class="bx bx-check-circle mt-1 mr-3 text-primary group-hover:text-green-200 transition-colors"></i>
+              <span class="text-lg group-hover:text-blue-100 transition-colors">
+                Flexible Learning Schedules
+              </span>
+            </li>
+            <li class="flex items-start group">
+              <i class="bx bx-check-circle mt-1 mr-3 text-primary group-hover:text-green-200 transition-colors"></i>
+              <span class="text-lg group-hover:text-blue-100 transition-colors">
+                Cutting-Edge Industry Curriculum
+              </span>
+            </li>
+            <li class="flex items-start group">
+              <i class="bx bx-check-circle mt-1 mr-3 text-primary group-hover:text-green-200 transition-colors"></i>
+              <span class="text-lg group-hover:text-blue-100 transition-colors">
+                Dedicated Career Support
+              </span>
+            </li>
+          </ul>
+
+          <button
+            class="pt-serif-regular relative w-full text-primary hover:bg-black/10 font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-md"
+          >
+            Explore Upcoming Sessions →
+          </button>
+        </div>
+
+        <!-- Form Panel -->
+        <div class="md:w-1/2 p-8">
+          <form
+            [formGroup]="registrationForm"
+            (ngSubmit)="onSubmit()"
+            class="flex flex-col gap-4"
+          >
+            <div>
+              <label class="block text-gray-700 font-medium mb-1"
+                >Full Name</label
+              >
+              <input
+                formControlName="name"
+                type="text"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-1"
+                >Email Address</label
+              >
+              <input
+                formControlName="email"
+                type="email"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-1"
+                >Phone Number</label
+              >
+              <input
+                formControlName="phone"
+                type="tel"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium mb-1"
+                >Select Category</label
+              >
+              <select
+                formControlName="category"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                (change)="onCategoryChange($event)"
+              >
+                <option value="" disabled selected>Select a category</option>
+                <option *ngFor="let cat of categories" [value]="cat">
+                  {{ cat | titlecase }}
+                </option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium mb-1"
+                >Course Interested In</label
+              >
+              <select
+                formControlName="course"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                <option value="" disabled selected>Select a course</option>
+                <option
+                  *ngFor="let course of availableCourses"
+                  [value]="course"
+                >
+                  {{ course }}
+                </option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-primary text-white py-3 rounded-lg font-semibold shadow-md hover:bg-opacity-90 transition"
+            >
+              Register Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

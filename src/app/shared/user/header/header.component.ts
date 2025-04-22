@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { headerReveal, menuSlide, slideInOutPanel } from "../../constants/animation";
 
 
@@ -9,7 +9,8 @@ import { headerReveal, menuSlide, slideInOutPanel } from "../../constants/animat
   imports: [CommonModule, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
-  animations: [menuSlide,slideInOutPanel,headerReveal]})
+  animations: [menuSlide, slideInOutPanel, headerReveal]
+})
 export class HeaderComponent {
   isMobileMenuOpen = false;
   animationDone = false;
@@ -21,7 +22,7 @@ export class HeaderComponent {
     { path: '/workshop', label: 'Workshops' },
     { path: '/contact', label: 'Contact' }
   ];
-
+  constructor(private router: Router) { }
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
@@ -30,7 +31,6 @@ export class HeaderComponent {
     this.animationDone = true;
   }
   openRegisterModal() {
-    // Implement your registration modal logic here
-    console.log('Opening registration modal');
+    this.router.navigate(['/register']);
   }
 }
