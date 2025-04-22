@@ -14,7 +14,7 @@ export const USER_ROUTES: Routes = [
   { path: 'courses', component: CoursesComponent, data: { animation: 'CoursesPage', routeIdx: 2 } },
   { path: 'workshop', component: WorkshopComponent, data: { animation: 'WorkshopPage', routeIdx: 3 } },
   { path: 'contact', component: ContactComponent, data: { animation: 'ContactPage', routeIdx: 4 } },
-  { path: 'register', component: RegisterComponent, data: { animation: 'RegisterPage', routeIdx: 5 } },
+  { path: 'register', component: RegisterComponent,data: { animation: 'RegisterComponent', routeIdx: 5 } },
 
 ];
 

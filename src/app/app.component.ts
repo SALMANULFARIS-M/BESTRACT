@@ -15,5 +15,4 @@ export class AppComponent {
     return outlet?.activatedRouteData?.['animation'] || '';
   }
 
-
 }

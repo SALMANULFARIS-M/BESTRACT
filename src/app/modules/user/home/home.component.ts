@@ -3,6 +3,7 @@ import { HeaderComponent } from '../../../shared/user/header/header.component';
 import { heroAnimations, zoomSlide } from '../../../shared/constants/animation';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FooterComponent } from '../../../shared/user/footer/footer.component';
+import { AnimationEvent } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
