@@ -15,10 +15,10 @@ import { AnimationEvent } from '@angular/animations';
 export class HomeComponent implements OnInit {
   isAnimating = true;
   images = [
-    { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_rG87FS0RX7rSpvj6NW_IDQ90ILO6bTlimee7U_i8PNC3PCIwhg_x-vRr1UpNchYA0Rw&usqp=CAU' },
     { src: 'https://imageio.forbes.com/specials-images/imageserve/673b3fa4d94f770224891222/Happy-young-business-team-planning-strategy-while-working-at-the-modern-office/960x0.jpg?format=jpg&width=960' },
-    { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfg59uzk0KQDzivZmiz2QG1TzlxpvPRchagcbnXxCViDUT-yrJzL2nYBzjPQl_t_YPdQ&usqp=CAU' },
-    { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBQlkHP-7jX7AWalr78k_JcHAip9bgVM0GFLpQiO_1RVHYLD-xmnd43YeS1TRBNauueXM&usqp=CAU' }
+    { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/The_Brave_People_of_Ukraine_-_2022_Sakharov_Prize_laureate_-_52567217363.jpg/1280px-The_Brave_People_of_Ukraine_-_2022_Sakharov_Prize_laureate_-_52567217363.jpg' },
+    { src: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg' },
+    { src: 'https://images.pexels.com/photos/2422290/pexels-photo-2422290.jpeg?cs=srgb&dl=pexels-jopwell-2422290.jpg&fm=jpg' },
   ];
 
   animationState: string[] = [];
@@ -45,10 +45,11 @@ export class HomeComponent implements OnInit {
 
       // Transition next image in
       this.animationState[this.currentIndex] = 'in';
-    }, 8000); // 8 seconds total (7s zoom + 1s fade)
+    }, 6000); // 6 seconds total (5s zoom + 1s fade)
   }
   onAnimationDone() {
     this.isAnimating = false;
   }
 }
 
+ 

@@ -80,35 +80,36 @@
   </div> -->
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-50 relative overflow-hidden">
+  <section id="about" class="py-20 bg-gray-100 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
       <div
-        class="bg-white/80 backdrop-blur-lg border border-gray-200 rounded-xl p-8 shadow-xl md:flex items-center gap-5"
+        class="bg-white/90 backdrop-blur-md border border-gray-200 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center overflow-hidden"
       >
-        <div class="md:w-1/3">
+        <!-- Text Side -->
+        <div class="md:w-1/2 w-full p-8 md:p-10 flex flex-col justify-center">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 poppins-regular">
+            About <span class="text-primary">Bestract</span>
+          </h2>
+          <p
+            class="text-gray-700 text-base md:text-lg leading-relaxed mb-6 text-justify open-sans-regular"
+          >
+            <strong class="text-primary">Bestract</strong> is a Bengaluru-based
+            training institute offering industry-relevant programs in marketing,
+            communication, and management. We emphasize hands-on learning,
+            expert mentorship, and real-world skill development to help you
+            thrive in the digital economy.
+          </p>
+          <p class="text-gray-800 text-lg text-center font-medium italic">
+            “Bridging the gap between classrooms and the real business world.”
+          </p>
+        </div>
+        <!-- Image Side -->
+        <div class="md:w-1/2 w-full h-full">
           <img
             src="https://www.aandmedu.in/wp-content/uploads/2020/04/Digital-Marketing.jpg"
-            alt="Bestract Illustration"
-            class="w-full rounded-lg"
+            alt="Bestract Training"
+            class="w-full h-full object-cover rounded-t-2xl md:rounded-l-none md:rounded-t-2xl"
           />
-        </div>
-        <div
-          class="md:w-2/3 flex flex-col justify-between h-full mb-8 md:mb-0 md:pr-10"
-        >
-          <div>
-            <p
-              class="text-gray-700 text-lg leading-relaxed text-justify mb-6 merriweather-regular"
-            >
-              <span class="font-semibold text-primary">Bestract</span> is a
-              Bengaluru-based training institute offering industry-relevant
-              programs in marketing, communication, and management. We emphasize
-              practical learning, expert mentorship, and job readiness to ensure
-              you step confidently into the digital-first workforce.
-            </p>
-          </div>
-          <p class="text-gray-900 text-lg mt-auto text-center poppins-medium">
-            Bridging the gap between classrooms and the real business world.
-          </p>
         </div>
       </div>
     </div>
@@ -612,215 +613,103 @@
   </section>
 
   <!-- stats/counter -->
-  <section class="bg-white py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+  <section class="relative py-20 md:py-24">
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 bg-[url('https://c0.wallpaperflare.com/preview/811/935/645/adults-analysis-brainstorming-collaboration.jpg')] bg-cover bg-center bg-fixed z-0"
+    ></div>
+    <!-- Black Overlay -->
+    <div class="absolute inset-0 bg-black/80 z-0"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2
-          class="text-4xl md:text-5xl font-bold text-tertiary pt-serif-regular font-serif tracking-tight uppercase mb-4"
+          class="text-4xl md:text-5xl font-bold text-secondary pt-serif-regular tracking-tight uppercase mb-4"
         >
           Our Impact in Numbers
         </h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto poppins-regular">
+        <p class="text-lg text-gray-100 max-w-3xl mx-auto poppins-regular">
           Transforming lives through quality education and career opportunities
         </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      <!-- Counter Grid -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 text-center"
+      >
         <!-- Online Students -->
-        <div
-          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col items-center text-center space-y-4"
-        >
-          <!-- Icon Container -->
+        <div class="flex flex-col items-center justify-center space-y-2">
           <div
-            class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center group-hover:bg-green-100 transition"
+            class="w-14 h-14 text-primary rounded-full flex items-center justify-center text-2xl"
           >
-            <svg
-              class="w-8 h-8 text-green-500"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
-              ></path>
-            </svg>
+            <i class="bx bx-laptop"></i>
           </div>
-
-          <!-- Number Highlight -->
-          <div>
-            <p class="text-3xl font-extrabold text-gray-900">
-              100<span class="text-green-500">+</span>
-            </p>
-            <p
-              class="text-sm font-semibold text-gray-500 uppercase tracking-widest mt-1"
-            >
-              Online Students
-            </p>
-          </div>
+          <div class="text-3xl font-extrabold text-primary counter">100+</div>
+          <p class="text-sm font-medium text-white uppercase tracking-widest">
+            Online Students
+          </p>
         </div>
 
         <!-- Offline Students -->
-        <div
-          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col items-center text-center space-y-4"
-        >
+        <div class="flex flex-col items-center justify-center space-y-2">
           <div
-            class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center group-hover:bg-blue-100 transition"
+            class="w-14 h-14 text-primary rounded-full flex items-center justify-center text-2xl"
           >
-            <svg
-              class="w-8 h-8 text-blue-500"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                clip-rule="evenodd"
-              />
-            </svg>
+            <i class="bx bx-user"></i>
           </div>
-          <div>
-            <p class="text-3xl font-extrabold text-gray-900">
-              100<span class="text-blue-500">+</span>
-            </p>
-            <p
-              class="text-sm font-semibold text-gray-500 uppercase tracking-widest mt-1"
-            >
-              Offline Students
-            </p>
-          </div>
+          <div class="text-3xl font-extrabold text-primary counter">100+</div>
+          <p class="text-sm font-medium text-white uppercase tracking-widest">
+            Offline Students
+          </p>
         </div>
 
         <!-- Placements -->
-        <div
-          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col items-center text-center space-y-4"
-        >
+        <div class="flex flex-col items-center justify-center space-y-2">
           <div
-            class="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center group-hover:bg-purple-100 transition"
+            class="w-14 h-14 text-primary rounded-full flex items-center justify-center text-2xl"
           >
-            <svg
-              class="w-8 h-8 text-purple-500"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              />
-              <path
-                d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"
-              />
-            </svg>
+            <i class="bx bx-briefcase"></i>
           </div>
-          <div>
-            <p class="text-3xl font-extrabold text-gray-900">
-              70<span class="text-purple-500">+</span>
-            </p>
-            <p
-              class="text-sm font-semibold text-gray-500 uppercase tracking-widest mt-1"
-            >
-              Placements
-            </p>
-          </div>
+          <div class="text-3xl font-extrabold text-primary counter">70+</div>
+          <p class="text-sm font-medium text-white uppercase tracking-widest">
+            Placements
+          </p>
         </div>
 
-        <!-- Batches -->
-        <div
-          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col items-center text-center space-y-4"
-        >
+        <!-- Certificates -->
+        <div class="flex flex-col items-center justify-center space-y-2">
           <div
-            class="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center group-hover:bg-pink-100 transition"
+            class="w-14 h-14 text-primary rounded-full flex items-center justify-center text-2xl"
           >
-            <svg
-              class="w-6 h-6 text-pink-500"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill="currentColor"
-                d="m18.774 8.245-.892-.893a1.5 1.5 0 0 1-.437-1.052V5.036a2.484 2.484 0 0 0-2.48-2.48H13.7a1.5 1.5 0 0 1-1.052-.438l-.893-.892a2.484 2.484 0 0 0-3.51 0l-.893.892a1.5 1.5 0 0 1-1.052.437H5.036a2.484 2.484 0 0 0-2.48 2.481V6.3a1.5 1.5 0 0 1-.438 1.052l-.892.893a2.484 2.484 0 0 0 0 3.51l.892.893a1.5 1.5 0 0 1 .437 1.052v1.264a2.484 2.484 0 0 0 2.481 2.481H6.3a1.5 1.5 0 0 1 1.052.437l.893.892a2.484 2.484 0 0 0 3.51 0l.893-.892a1.5 1.5 0 0 1 1.052-.437h1.264a2.484 2.484 0 0 0 2.481-2.48V13.7a1.5 1.5 0 0 1 .437-1.052l.892-.893a2.484 2.484 0 0 0 0-3.51Z"
-              />
-              <path
-                fill="#fff"
-                d="M8 13a1 1 0 0 1-.707-.293l-2-2a1 1 0 1 1 1.414-1.414l1.42 1.42 5.318-3.545a1 1 0 0 1 1.11 1.664l-6 4A1 1 0 0 1 8 13Z"
-              />
-            </svg>
+            <i class="bx bx-award"></i>
           </div>
-          <div>
-            <p class="text-3xl font-extrabold text-gray-900">
-              60<span class="text-pink-500">+</span>
-            </p>
-            <p
-              class="text-sm font-semibold text-gray-500 uppercase tracking-widest mt-2"
-            >
-              Certificate
-            </p>
-          </div>
+          <div class="text-3xl font-extrabold text-primary counter">50+</div>
+          <p class="text-sm font-medium text-white uppercase tracking-widest">
+            Certificates
+          </p>
         </div>
 
         <!-- Experience -->
-        <div
-          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 text-center"
-        >
+        <div class="flex flex-col items-center justify-center space-y-2">
           <div
-            class="w-16 h-16 bg-yellow-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-yellow-100 transition"
+            class="w-14 h-14 text-primary rounded-full flex items-center justify-center text-2xl"
           >
-            <svg
-              class="w-8 h-8 text-yellow-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 7a1 1 0 000 2h12a1 1 0 100-2H6z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
+            <i class="bx bx-line-chart"></i>
           </div>
-          <div class="flex justify-center items-baseline">
-            <p class="text-3xl font-bold text-gray-900">
-              3<span class="text-yellow-500">+</span>
-              <span class="text-gray-900 text-base ml-1">Yrs</span>
-            </p>
-          </div>
-          <p
-            class="text-sm font-medium text-gray-500 uppercase tracking-wider mt-2"
-          >
-            Experience
+          <div class="text-3xl font-extrabold text-primary counter">3</div>
+          <p class="text-sm font-medium text-white uppercase tracking-widest">
+            Years Experience
           </p>
         </div>
 
         <!-- Workshops -->
-        <div
-          class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 text-center"
-        >
-          <!-- Icon Container -->
+        <div class="flex flex-col items-center justify-center space-y-2">
           <div
-            class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-red-100 transition"
+            class="w-14 h-14 text-primary rounded-full flex items-center justify-center text-2xl"
           >
-            <svg
-              class="w-8 h-8 text-red-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 3.5A1.5 1.5 0 013.5 2h17a1.5 1.5 0 011.5 1.5v9a1.5 1.5 0 01-1.5 1.5h-6v2h2a1 1 0 110 2h-2v1.5a1.5 1.5 0 11-3 0V18h-2a1 1 0 110-2h2v-2h-6A1.5 1.5 0 012 12.5v-9zM4 4v8h16V4H4z"
-              />
-            </svg>
+            <i class="bx bx-microphone"></i>
           </div>
-
-          <!-- Number with Plus Sign -->
-          <p
-            class="text-3xl font-bold text-gray-900 mb-2 flex justify-center items-baseline"
-          >
-            100<span class="text-red-500">+</span>
-          </p>
-
-          <!-- Label -->
-          <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">
+          <div class="text-3xl font-extrabold text-primary counter">200</div>
+          <p class="text-sm font-medium text-white uppercase tracking-widest">
             Workshops
           </p>
         </div>

@@ -33,4 +33,5 @@ export class HeaderComponent {
   openRegisterModal() {
     this.router.navigate(['/register']);
   }
+
 }
