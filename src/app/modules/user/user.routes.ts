@@ -17,4 +17,3 @@ export const USER_ROUTES: Routes = [
   { path: 'register', component: RegisterComponent,data: { animation: 'RegisterComponent', routeIdx: 5 } },
 
 ];
-

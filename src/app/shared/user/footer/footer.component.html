@@ -1,123 +1,109 @@
-<!-- Footer -->
-<footer class="bg-gray-950 text-white pt-12 pb-6">
-  <div class="container mx-auto px-4 md:px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-      <div>
-        <div class="text-2xl font-bold mb-4 montserrat-bold">
-          <span class="text-primary">Be</span
-          ><span class="text-secondary">stract</span>
+<footer class="bg-gradient-to-b from-gray-900 to-gray-950 text-white pt-16 pb-10 font-poppins">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <!-- Branding Column -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center mb-3">
+          <div class="text-4xl font-bold tracking-tight bg-gradient-to-r from-primary to-secondary bg-clip-text">
+            <span class="text-primary">Be</span><span class="text-secondary">stract</span>
+          </div>
+          <span class="ml-3 px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">EST. 2022</span>
         </div>
-        <p class="text-gray-400 mb-4 poppins-medium">
-          Bengaluru's leading institute for Marketing, Communication & Management
-          training.
+        <p class="text-gray-300 text-sm leading-relaxed mb-4 max-w-md">
+          Bengaluru's premier institute for Marketing, Communication & Management training. We empower professionals with cutting-edge skills for the digital age.
         </p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-primary transition">
-            <i class="fab fa-facebook-f"></i>
+
+        <!-- Social Media -->
+        <div class="flex gap-3 text-lg">
+          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 hover:bg-primary rounded-full text-gray-300 hover:text-white transition">
+            <i class="bx bxl-facebook"></i>
           </a>
-          <a href="#" class="text-gray-400 hover:text-primary transition">
-            <i class="fab fa-instagram"></i>
+          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 hover:bg-pink-600 rounded-full text-gray-300 hover:text-white transition">
+            <i class="bx bxl-instagram"></i>
           </a>
-          <a href="#" class="text-gray-400 hover:text-primary transition">
-            <i class="fab fa-twitter"></i>
+          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 hover:bg-blue-400 rounded-full text-gray-300 hover:text-white transition">
+            <i class="bx bxl-twitter"></i>
           </a>
-          <a href="#" class="text-gray-400 hover:text-primary transition">
-            <i class="fab fa-linkedin-in"></i>
+          <a href="#" class="w-9 h-9 flex items-center justify-center bg-gray-800 hover:bg-blue-600 rounded-full text-gray-300 hover:text-white transition">
+            <i class="bx bxl-linkedin"></i>
           </a>
         </div>
       </div>
+
+      <!-- Quick Links -->
       <div>
-        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <h4 class="text-lg font-semibold mb-4 pb-2 border-b border-gray-800 inline-block">Explore</h4>
         <ul class="space-y-2">
           <li>
-            <a
-              href="#home"
-              class="text-gray-400 hover:text-primary transition"
-              >Home</a
-            >
+            <a routerLink="/" class="flex items-center text-gray-300 hover:text-primary transition group">
+              <span class="w-1 h-1 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"></span>
+              Home
+            </a>
           </li>
           <li>
-            <a
-              href="#about"
-              class="text-gray-400 hover:text-primary transition"
-              >About Us</a
-            >
+            <a routerLink="/about" class="flex items-center text-gray-300 hover:text-primary transition group">
+              <span class="w-1 h-1 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"></span>
+              About Us
+            </a>
           </li>
           <li>
-            <a
-              href="#courses"
-              class="text-gray-400 hover:text-primary transition"
-              >Courses</a
-            >
+            <a routerLink="/courses" class="flex items-center text-gray-300 hover:text-primary transition group">
+              <span class="w-1 h-1 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"></span>
+              Courses
+            </a>
           </li>
           <li>
-            <a
-              href="#testimonials"
-              class="text-gray-400 hover:text-primary transition"
-              >Testimonials</a
-            >
+            <a routerLink="/workshops" class="flex items-center text-gray-300 hover:text-primary transition group">
+              <span class="w-1 h-1 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"></span>
+              Workshops
+            </a>
           </li>
           <li>
-            <a
-              href="#contact"
-              class="text-gray-400 hover:text-primary transition"
-              >Contact</a
-            >
+            <a routerLink="/contact" class="flex items-center text-gray-300 hover:text-primary transition group">
+              <span class="w-1 h-1 bg-primary rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"></span>
+              Contact
+            </a>
           </li>
         </ul>
       </div>
+
+      <!-- Contact Info -->
       <div>
-        <h4 class="text-lg font-semibold mb-4">Our Courses</h4>
-        <ul class="space-y-2">
-          <li>
-            <a href="#" class="text-gray-400 hover:text-primary transition"
-              >Digital Marketing</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-primary transition"
-              >Brand Management</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-primary transition"
-              >Business Management</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-primary transition"
-              >Finishing School</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-gray-400 hover:text-primary transition"
-              >Corporate Training</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
-        <ul class="space-y-3">
+        <h4 class="text-lg font-semibold mb-4 pb-2 border-b border-gray-800 inline-block">REACH US</h4>
+        <ul class="space-y-3 text-gray-300 text-sm">
           <li class="flex items-start">
-            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i>
-            <span class="text-gray-400">Bengaluru, Karnataka, India</span>
+            <i class="bx bx-map mr-3 text-primary text-lg mt-1"></i>
+            <span>#22, MG Road, Bengaluru<br />Karnataka, India - 560001</span>
           </li>
           <li class="flex items-start">
-            <i class="fas fa-phone-alt mt-1 mr-3 text-primary"></i>
-            <span class="text-gray-400">+91 98800 0879</span>
+            <i class="bx bx-phone mr-3 text-primary text-lg mt-1"></i>
+            <div>
+              <span>+91 98800 0879</span><br />
+              <span class="text-xs text-gray-400">Mon-Sat, 9AM-6PM</span>
+            </div>
           </li>
           <li class="flex items-start">
-            <i class="fas fa-envelope mt-1 mr-3 text-primary"></i>
-            <span class="text-gray-400">hellobestract.in</span>
+            <i class="bx bx-envelope mr-3 text-primary text-lg mt-1"></i>
+            <span>hello&#64;bestract.in</span>
           </li>
         </ul>
       </div>
     </div>
-    <div
-      class="border-t border-gray-700 pt-6 text-center text-gray-500 text-sm"
-    >
-      <p>© 2025 Bestract. All Rights Reserved.</p>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 pt-6 mt-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+      <p class="flex items-center justify-center gap-1 mb-4 md:mb-0">
+        © 2025 Bestract. All rights reserved. Crafted with
+        <a href="https://incubenation.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center hover:underline">
+          <img src="https://incubenation.com/assets/incubenation-DP-3-DClrSOz0.png" alt="incubenation logo" class="w-3 h-3 mx-1" />
+          <span>incubenation</span>
+        </a>
+      </p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-primary transition">Privacy Policy</a>
+        <a href="#" class="hover:text-primary transition">Terms of Service</a>
+        <a href="#" class="hover:text-primary transition">Sitemap</a>
+      </div>
     </div>
   </div>
 </footer>

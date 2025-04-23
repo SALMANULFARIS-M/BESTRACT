@@ -3,3 +3,10 @@
   <router-outlet #outlet="outlet"></router-outlet>
 </div>
 
+
+<button
+  *ngIf="showBackToTop"
+  (click)="scrollToTop()"
+  class="fixed bottom-8 right-8 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center shadow-lg transition-all hover:bg-secondary z-50"
+>
+<i class="bx bx-up-arrow-alt"></i></button>
