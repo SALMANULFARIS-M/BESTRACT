@@ -7,7 +7,6 @@ import { CoursesComponent } from './courses/courses.component';
 import { RegisterComponent } from './register/register.component';
 
 
-
 export const USER_ROUTES: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'HomePage', routeIdx: 0 } },
   { path: 'about', component: AboutComponent, data: { animation: 'AboutPage', routeIdx: 1 } },
