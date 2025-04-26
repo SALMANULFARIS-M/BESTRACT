@@ -23,8 +23,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   ];
   animationState: string[] = [];
   private currentIndex = 0;
-  visibleLogos: any[] = [];
+  logosPerPage = 4;
   currentLogo = 0;
+  logosIntervalId: any;
+  visibleLogos: any[] = [];
   intervalId: any;
 
   logos: PartnerLogo[] = [
@@ -40,6 +42,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     { name: 'Subz', imageUrl: 'https://bestract.com/user/partners/Subz.png' },
     { name: 'Team Lease', imageUrl: 'https://d3isa0ssinyrxx.cloudfront.net/teamlease-content/2020/09/01/TeamleaseLogo_1598946933-1598946934-53943.jpeg' },
     { name: 'First Source', imageUrl: 'https://www.firstsource.com/themes/custom/first_source/images/Firstsource-logo.svg' },
+    { name: 'Flyrad', imageUrl: 'https://www.flyrad.in/assets/Flyradnewlogochanges3-BITTFNPt.svg' },
+    { name: 'Kovai', imageUrl: 'https://www.kovairawutherbiriyani.com/assets/KovaiLogo2-Db-ZaG1Z.svg' },
+    { name: 'Careercafe', imageUrl: 'https://res.cloudinary.com/dwfurekw0/image/upload/v1745667202/Careercafe._logo_isoscw.png' },
+    { name: 'Ceo Square', imageUrl: 'https://res.cloudinary.com/dwfurekw0/image/upload/v1745667194/CEO_Square_Logo_a_avfefg.png' },
 
   ];
 
@@ -49,12 +55,18 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (isPlatformBrowser(this.platformId)) {
       // Initialize all images to 'out' state except first
       this.animationState = this.images.map((_, i) => i === 0 ? 'in' : 'out');
-      // Start the slideshow
       this.startSlideshow();
+
+      // Initial setup for mobile and desktop
+      this.setLogosPerPage();
       this.updateVisibleLogos();
-      this.intervalId = setInterval(() => {
-        this.nextLogos();
-      }, 3000);
+      this.startAutoRotation();
+
+      // Update on window resize
+      window.addEventListener('resize', () => {
+        this.setLogosPerPage();
+        this.updateVisibleLogos();
+      });
     }
 
   }
@@ -75,22 +87,61 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.isAnimating = false;
   }
 
+  setLogosPerPage() {
+    // For mobile (default): show 4 logos total (2x2)
+    // For md+: show 8 logos total (4x2)
+    const width = window.innerWidth;
+    this.logosPerPage = width >= 768 ? 8 : 4;
+  }
+
   updateVisibleLogos() {
-    this.visibleLogos = this.logos.slice(this.currentLogo, this.currentLogo + 4);
+    // Get the current set of logos to display
+    const endIndex = this.currentLogo + this.logosPerPage;
+    this.visibleLogos = this.logos.slice(this.currentLogo, endIndex);
+
+    // If we're at the end, loop back to the beginning
+    if (this.currentLogo >= this.logos.length) {
+      this.currentLogo = 0;
+      this.visibleLogos = this.logos.slice(0, this.logosPerPage);
+    }
+
+    // If we don't have enough logos to fill the page, add from beginning
+    if (this.visibleLogos.length < this.logosPerPage) {
+      const remaining = this.logosPerPage - this.visibleLogos.length;
+      this.visibleLogos = [...this.visibleLogos, ...this.logos.slice(0, remaining)];
+    }
   }
 
   nextLogos() {
-    this.currentLogo += 4;
+    this.currentLogo += this.logosPerPage;
     if (this.currentLogo >= this.logos.length) {
       this.currentLogo = 0;
     }
     this.updateVisibleLogos();
   }
+
+  startAutoRotation() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+    this.intervalId = setInterval(() => {
+      this.nextLogos();
+    }, 3500); // Rotate every 3.5 seconds
+  }
+
   ngOnDestroy() {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
+    if (isPlatformBrowser(this.platformId)) {
+
+    window.removeEventListener('resize', () => {});
   }
+  }
+  // removeBlur(event: Event) {
+  //   const imgElement = event.target as HTMLImageElement;
+  //   imgElement.classList.remove('blur-sm');
+  // }
 
 }
 

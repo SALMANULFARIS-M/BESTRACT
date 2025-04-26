@@ -151,6 +151,7 @@
 
  /* Slide in Animation */
  /* Animations */
+/* Animation Keyframes */
 @keyframes slideTop {
   0% {
     transform: translateY(-30px);
@@ -173,15 +174,40 @@
   }
 }
 
-.animate-slide-top {
-  animation: slideTop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+/* Animation Base Styles */
+.logo-grid-item {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  will-change: transform, opacity;
+
+  &.animate-slide-top {
+    animation: slideTop 0.7s ease-out forwards;
+  }
+
+  &.animate-slide-bottom {
+    animation: slideBottom 0.7s ease-out forwards;
+  }
 }
 
-.animate-slide-bottom {
-  animation: slideBottom 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+/* Responsive Animation Delays */
+@media (min-width: 768px) { /* md screens and up */
+  .logo-grid-item {
+    animation-delay: calc(var(--animation-order) * 100ms);
+  }
 }
 
-
-
-
-
+@media (max-width: 767px) { /* mobile */
+  .logo-grid-item {
+    animation-delay: calc(var(--animation-order) * 50ms);
+  }
+}
+/* Dynamic Animation Delays */
+.animation-delay-0 { animation-delay: 0ms; }
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-500 { animation-delay: 500ms; }
+.animation-delay-600 { animation-delay: 600ms; }
+.animation-delay-700 { animation-delay: 700ms; }
+.animation-delay-800 { animation-delay: 800ms; }

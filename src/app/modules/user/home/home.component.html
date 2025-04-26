@@ -72,8 +72,6 @@
     </div>
   </section>
 
-
-
   <!-- About Section -->
   <section id="about" class="py-20 bg-gray-100 relative overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
@@ -103,7 +101,7 @@
           <img
             src="https://www.aandmedu.in/wp-content/uploads/2020/04/Digital-Marketing.jpg"
             alt="Bestract Training"
-            class="w-full h-full object-cover rounded-b-2xl  md:rounded-l-none md:rounded-t-2xl"
+            class="w-full h-full object-cover rounded-b-2xl md:rounded-l-none md:rounded-t-2xl"
           />
         </div>
       </div>
@@ -471,33 +469,46 @@
     <div class="container mx-auto px-4 md:px-6">
       <!-- Section Header -->
       <div class="text-center mb-14 md:mb-20">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-tertiary font-serif tracking-tight uppercase">
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-tertiary font-serif tracking-tight uppercase"
+        >
           Placements & Internships
         </h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 mb-8 rounded-full"></div>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed poppins-regular">
-          Our students have secured positions with industry leaders across media, tech, and marketing sectors.
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 mb-8 rounded-full"
+        ></div>
+        <p
+          class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed poppins-regular"
+        >
+          Our students have secured positions with industry leaders across
+          media, tech, and marketing sectors.
         </p>
       </div>
 
       <!-- Logo Grid -->
-      <div class="relative overflow-hidden py-8 md:py-12 bg-white rounded-2xl shadow-lg mb-20 px-4">
-        <!-- Display Only 4 Logos at a Time -->
+      <div
+        class="relative overflow-hidden py-8 md:py-12 bg-white rounded-2xl shadow-lg mb-20 px-4"
+      >
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
           <ng-container *ngFor="let logo of visibleLogos; let i = index">
-            <div class="bg-white shadow-lg p-6 rounded-lg flex items-center justify-center transform transition-all duration-500"
-              [ngClass]="i % 2 === 0 ? 'animate-slide-top' : 'animate-slide-bottom'">
-              <img [src]="logo.imageUrl" [alt]="logo.name" class="w-48 h-28 object-contain" loading="lazy">
+            <div
+              class="logo-grid-item bg-white shadow-lg p-6 rounded-lg flex items-center justify-center"
+              [class.animate-slide-top]="i % 2 === 0"
+              [class.animate-slide-bottom]="i % 2 !== 0"
+              [style.--animation-order]="i % 4"
+            >
+              <img
+                [src]="logo.imageUrl"
+                [alt]="logo.name"
+                class="w-48 h-28 object-contain"
+                loading="lazy"
+              />
             </div>
           </ng-container>
         </div>
       </div>
     </div>
   </section>
-
-
-
-
 
   <!-- stats/counter -->
   <section class="relative py-20 md:py-24">
@@ -897,7 +908,6 @@
       </div>
     </div>
   </section> -->
-
 </main>
 <app-floating-social></app-floating-social>
 
