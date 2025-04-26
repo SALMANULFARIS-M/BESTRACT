@@ -149,99 +149,39 @@
 }
 
 
-
-/* .animate-float-slow {
-/* Container styles */
-.logo-marquee-section {
-  background-color: white;
-  padding: 3rem 0;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
-}
-
-/* Fading edges */
-.logo-marquee-section::before,
-.logo-marquee-section::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 80px;
-  z-index: 10;
-}
-
-.logo-marquee-section::before {
-  left: 0;
-  background: linear-gradient(to right, white, transparent);
-}
-
-.logo-marquee-section::after {
-  right: 0;
-  background: linear-gradient(to left, white, transparent);
-}
-
-/* Marquee track */
-.logo-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 30s linear infinite;
-  will-change: transform;
-}
-
-/* Logo item */
-.logo-item {
-  flex-shrink: 0;
-  padding: 0 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: float 5s ease-in-out infinite;
-  animation-delay: var(--float-delay);
-}
-
-/* Logo image */
-.logo-img {
-  max-height: 90px;
-  width: auto;
-  object-fit: contain;
-  opacity: 1; /* Full visibility */
-  transition: all 0.3s ease;
-  filter: none; /* Remove grayscale */
-}
-
-
-.logo-img:hover {
-  opacity: 1;
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
-
-/* Animations */
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
-
-/* Responsive tweaks */
-@media (min-width: 768px) {
-  .logo-item {
-    padding: 0 3rem;
+ /* Slide in Animation */
+ /* Animations */
+@keyframes slideTop {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
   }
-
-  .logo-img {
-    max-height: 100px;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(-1deg); }
-    50% { transform: translateY(-20px) rotate(1deg); }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-top {
+  animation: slideTop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-slide-bottom {
+  animation: slideBottom 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+
+
+
 

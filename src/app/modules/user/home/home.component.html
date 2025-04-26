@@ -471,49 +471,33 @@
     <div class="container mx-auto px-4 md:px-6">
       <!-- Section Header -->
       <div class="text-center mb-14 md:mb-20">
-        <h2
-          class="text-3xl md:text-4xl lg:text-5xl font-bold text-tertiary pt-serif-regular font-serif tracking-tight uppercase"
-        >
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-tertiary font-serif tracking-tight uppercase">
           Placements & Internships
         </h2>
-        <div
-          class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 mb-8 rounded-full"
-        ></div>
-        <p
-          class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed poppins-regular"
-        >
-          Our students have secured positions with industry leaders across
-          media, tech, and marketing sectors.
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 mb-8 rounded-full"></div>
+        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed poppins-regular">
+          Our students have secured positions with industry leaders across media, tech, and marketing sectors.
         </p>
       </div>
 
       <!-- Logo Grid -->
-      <div class="relative overflow-hidden py-8 md:py-12 bg-white rounded-2xl shadow-lg mb-20">
-        <!-- Edge Fades -->
-        <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
-        <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
-
-        <!-- Logo Scroller -->
-        <div class="logo-marquee-section">
-          <div class="logo-marquee">
-            <!-- First Loop -->
-            <ng-container *ngFor="let logo of logos; let i = index">
-              <div class="logo-item" [style.--float-delay]="i * 0.2 + 's'">
-                <img [src]="logo.imageUrl" [alt]="logo.name" class="logo-img" loading="lazy">
-              </div>
-            </ng-container>
-
-            <!-- Duplicate for seamless looping -->
-            <ng-container *ngFor="let logo of logos; let i = index">
-              <div class="logo-item" [style.--float-delay]="(i + logos.length) * 0.2 + 's'">
-                <img [src]="logo.imageUrl" [alt]="logo.name" class="logo-img" loading="lazy">
-              </div>
-            </ng-container>
-          </div>
+      <div class="relative overflow-hidden py-8 md:py-12 bg-white rounded-2xl shadow-lg mb-20 px-4">
+        <!-- Display Only 4 Logos at a Time -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <ng-container *ngFor="let logo of visibleLogos; let i = index">
+            <div class="bg-white shadow-lg p-6 rounded-lg flex items-center justify-center transform transition-all duration-500"
+              [ngClass]="i % 2 === 0 ? 'animate-slide-top' : 'animate-slide-bottom'">
+              <img [src]="logo.imageUrl" [alt]="logo.name" class="w-48 h-28 object-contain" loading="lazy">
+            </div>
+          </ng-container>
         </div>
       </div>
     </div>
   </section>
+
+
+
+
 
   <!-- stats/counter -->
   <section class="relative py-20 md:py-24">
